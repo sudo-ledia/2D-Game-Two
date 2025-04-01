@@ -337,7 +337,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterName: Enemy
-  health: 5
+  health: 1
   displayHealth: {fileID: 257497940175632799}
   speed: 0.01
   xSpeed: 0.02

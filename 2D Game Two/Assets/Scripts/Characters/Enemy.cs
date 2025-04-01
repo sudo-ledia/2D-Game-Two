@@ -28,6 +28,7 @@ public class Enemy : CharacterBase
     void Update()
     {
         DisplayHealth();
+        Health();
         
         manager = FindObjectOfType<GameManager>();
         thisObject.transform.position += new Vector3(xDir, yDir, 0) * speed;
@@ -42,10 +43,11 @@ public class Enemy : CharacterBase
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.tag == "Bomb")
+        if(other.tag == "Projectile")
         {
-            health = health - 5;
+            health = health - 1;
             Destroy(other.gameObject);
+            // Destroy(gameObject);
         }
     }
 

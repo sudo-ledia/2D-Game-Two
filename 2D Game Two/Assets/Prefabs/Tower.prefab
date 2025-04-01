@@ -115,8 +115,8 @@ GameObject:
   - component: {fileID: 4214273356394595925}
   - component: {fileID: 3502576825197510791}
   m_Layer: 0
-  m_Name: Hexagon Flat-Top
-  m_TagString: Untagged
+  m_Name: Tower
+  m_TagString: Tower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -204,6 +204,9 @@ MonoBehaviour:
   characterName: Tower
   health: 100
   displayHealth: {fileID: 7805071614901059213}
+  projectile: {fileID: 505114964715998098, guid: b65e3b8fc274b6a4197880d4505381cf, type: 3}
+  spawnTimer: 0
+  spawnInterval: 0.5
 --- !u!60 &3502576825197510791
 PolygonCollider2D:
   m_ObjectHideFlags: 0
