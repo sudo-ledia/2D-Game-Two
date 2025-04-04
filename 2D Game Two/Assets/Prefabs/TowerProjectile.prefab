@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 8500552210451784927}
   - component: {fileID: 74688168487730902}
   - component: {fileID: 4960306347235664172}
-  - component: {fileID: 3306870211209344689}
+  - component: {fileID: -2007487679308356750}
   m_Layer: 0
-  m_Name: projectile
+  m_Name: TowerProjectile
   m_TagString: Projectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.8624263, a: 1}
+  m_Color: {r: 1, g: 0.8129904, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -121,7 +121,7 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.49999997
---- !u!114 &3306870211209344689
+--- !u!114 &-2007487679308356750
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -130,12 +130,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 505114964715998098}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a947e3c57f60faf4499da7540178125b, type: 3}
+  m_Script: {fileID: 11500000, guid: d613e879978199a40b96fc16407c9a26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0.1
   thisObject: {fileID: 505114964715998098}
   lifeTime: 3
   timer: 0
-  xDir: 0
-  yDir: 0
+  targetEnemy: {fileID: 0}

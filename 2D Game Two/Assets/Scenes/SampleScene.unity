@@ -161,7 +161,7 @@ MonoBehaviour:
   enemy: {fileID: 7348025318363565692, guid: ea70a008d61f715459f4d0ff24854519, type: 3}
   targetEnemy: {fileID: 3701610297772221846, guid: b08a726d42cb07f4dbd117bbc0a30705, type: 3}
   enemyCounter: 0
-  spawnLimit: 5
+  spawnLimit: 1
 --- !u!4 &48680586
 Transform:
   m_ObjectHideFlags: 0

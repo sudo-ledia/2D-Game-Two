@@ -204,7 +204,7 @@ MonoBehaviour:
   characterName: Tower
   health: 100
   displayHealth: {fileID: 7805071614901059213}
-  projectile: {fileID: 505114964715998098, guid: b65e3b8fc274b6a4197880d4505381cf, type: 3}
+  projectile: {fileID: 505114964715998098, guid: 53dfba125ca00c343a7fa286bd701843, type: 3}
   spawnTimer: 0
   spawnInterval: 0.5
 --- !u!60 &3502576825197510791
