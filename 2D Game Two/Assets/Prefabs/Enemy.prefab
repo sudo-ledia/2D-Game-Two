@@ -337,7 +337,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterName: Enemy
-  health: 1
+  health: 5
   displayHealth: {fileID: 257497940175632799}
   speed: 0.01
   xSpeed: 0.02
@@ -347,7 +347,7 @@ MonoBehaviour:
   yDir: 0
   manager: {fileID: 0}
   reverseTime: 0
-  reverseInterval: 3
+  reverseInterval: 0.5
 --- !u!50 &5606712573670866694
 Rigidbody2D:
   serializedVersion: 4

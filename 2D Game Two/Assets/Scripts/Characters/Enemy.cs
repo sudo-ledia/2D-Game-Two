@@ -56,6 +56,7 @@ public class Enemy : CharacterBase
         if(health <= 0)
         {   
             manager.enemyCounter--;
+            manager.money++;
             Destroy(gameObject);
         }
     }

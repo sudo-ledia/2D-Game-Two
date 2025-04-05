@@ -17,6 +17,7 @@ public class RandomProjectile : BaseProjectile
     // Update is called once per frame
     void Update()
     {
+        BulletLifetime();
         thisObject.transform.position += new Vector3(xDir, yDir, 0) * speed;
     }
 }

@@ -101,7 +101,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterName: 
-  health: 1
+  health: 7
   displayHealth: {fileID: 7466846621969978652}
   speed: 0.01
   xSpeed: 0

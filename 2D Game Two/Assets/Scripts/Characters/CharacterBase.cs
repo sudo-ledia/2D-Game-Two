@@ -33,7 +33,7 @@ public class CharacterBase : MonoBehaviour
     {
         if(health <= 0)
         {
-            Destroy(gameObject);
+            this.enabled = false;
         }
     }
 }

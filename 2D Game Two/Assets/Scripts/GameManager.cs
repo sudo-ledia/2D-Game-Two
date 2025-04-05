@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -22,23 +24,29 @@ public class GameManager : MonoBehaviour
 
     public int spawnLimit;
 
-    private void Awake()
-    {
-        if(Instance == null)
-        {
-            DontDestroyOnLoad(gameObject);
-            Instance = this;
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
-    }
+    public int money = 500;
+
+    public TextMeshProUGUI displayMoney;
+
+    // private void Awake()
+    // {
+    //     if(Instance == null)
+    //     {
+    //         DontDestroyOnLoad(gameObject);
+    //         Instance = this;
+    //     }
+    //     else
+    //     {
+    //         Destroy(gameObject);
+    //     }
+    // }
     
 
     // Update is called once per frame
     void Update()
     {
+        DisplayMoney();
+
         enemyTimer += Time.deltaTime;
         enemyTimer2 += Time.deltaTime;
 
@@ -69,5 +77,10 @@ public class GameManager : MonoBehaviour
         {
             enemyTimer2 = 0f;
         }
+    }
+
+    void DisplayMoney()
+    {
+        displayMoney.text = "Money:" + money;
     }
 }

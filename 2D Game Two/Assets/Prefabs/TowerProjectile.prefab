@@ -135,6 +135,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 0.1
   thisObject: {fileID: 505114964715998098}
-  lifeTime: 3
+  lifeTime: 2
   timer: 0
   targetEnemy: {fileID: 0}

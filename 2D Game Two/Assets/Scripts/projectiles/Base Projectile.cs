@@ -18,6 +18,11 @@ public class BaseProjectile : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        BulletLifetime();
+    }
+
+    public void BulletLifetime()
+    {
         timer += Time.deltaTime;
         if (timer >= lifeTime)
         {

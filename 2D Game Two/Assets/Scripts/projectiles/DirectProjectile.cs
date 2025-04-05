@@ -15,7 +15,18 @@ public class DirectProjectile : BaseProjectile
     // Update is called once per frame
     void Update()
     {
-        thisObject.transform.position += VectorToPlayer() * speed;
+        BulletLifetime();
+        
+        if(targetEnemy != null)
+        {
+            thisObject.transform.position += VectorToPlayer() * speed;
+        }
+
+        if(targetEnemy == null)
+        {
+            Destroy(gameObject);
+        }
+        
     }
 
     Vector3 VectorToPlayer()
